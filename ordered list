@@ -1,0 +1,91 @@
+a. Write a HTML program to explain the working of lists.It should have an ordered list, unordered list, nested lists and ordered list in an unordered list 
+Examples: 
+and definition lists. 
+•	Ordered List (<ol>) displays items in a numbered sequence. 
+•	Unordered List (<ul>) shows items using bullet points. 
+•	Nested Lists allow one list to be placed inside another for hierarchical structure. 
+•	Ordered List inside an Unordered List is used to show categories with numbered sub-items. 
+•	Definition List (<dl>) presents terms and their meanings using <dt> and <dd> tags. 
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Working of Lists - Aditya University Example</title> 
+</head> 
+<body> 
+    <h1>Aditya University - Departments & Courses</h1> 
+    <!-- Ordered List --> 
+    <h2>1. Main Schools in Aditya University (Ordered List)</h2> 
+    <ol> 
+        <li>School of Engineering</li> 
+        <li>School of Pharmacy</li> 
+        <li>School of Business</li> 
+    </ol> 
+    <!-- Unordered List --> 
+    <h2>2. Schools (Unordered List)</h2> 
+    <ul> 
+    </ul> 
+ 
+    <!-- Nested List --> 
+    <ul> 
+            <ul> 
+                <li>Civil Engineering</li> 
+                <li>Computer Science Engineering (CSE)</li> 
+                <li>Electronics & Communication Engineering (ECE)</li> 
+                <li>Electrical & Electronics Engineering (EEE)</li> 
+                <li>Mechanical Engineering (MECH)</li> 
+                <li>Mining Engineering</li> 
+                <li>Petroleum Engineering</li> 
+            </ul> 
+        </li> 
+    </ul> 
+ 
+ 
+ 
+ 
+Output: 
+and definition lists. 
+•	Ordered List (<ol>) displays items in a numbered sequence. 
+•	Unordered List (<ul>) shows items using bullet points. 
+•	Nested Lists allow one list to be placed inside another for hierarchical structure. 
+•	Ordered List inside an Unordered List is used to show categories with numbered sub-items. 
+•	Definition List (<dl>) presents terms and their meanings using <dt> and <dd> tags. 
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Working of Lists - Aditya University Example</title> 
+</head> 
+<body> 
+    <h1>Aditya University - Departments & Courses</h1> 
+    <!-- Ordered List --> 
+    <h2>1. Main Schools in Aditya University (Ordered List)</h2> 
+    <ol> 
+        <li>School of Engineering</li> 
+        <li>School of Pharmacy</li> 
+        <li>School of Business</li> 
+    </ol> 
+    <!-- Unordered List --> 
+    <h2>2. Schools (Unordered List)</h2> 
+    <ul> 
+    </ul> 
+ 
+    <!-- Nested List --> 
+    <ul> 
+            <ul> 
+                <li>Civil Engineering</li> 
+                <li>Computer Science Engineering (CSE)</li> 
+                <li>Electronics & Communication Engineering (ECE)</li> 
+                <li>Electrical & Electronics Engineering (EEE)</li> 
+                <li>Mechanical Engineering (MECH)</li> 
+                <li>Mining Engineering</li> 
+                <li>Petroleum Engineering</li> 
+            </ul> 
+        </li> 
+    </ul> 
+ 
+ 
+ 
+ 
+
+  
+
+  
