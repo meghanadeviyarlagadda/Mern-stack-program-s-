@@ -1,0 +1,49 @@
+8. ExpressJS – Cookies, Sessions, Authentication, Database 
+operations. 
+a. Write a program for session management using cookies and sessions. 
+b. Write a program for user authentication. 
+c. Write a program to connect MongoDB database using Mongoose and perform CRUD 
+Write a program for session management using cookies and sessions. 
+1. Cookies store small user data in the browser (client side). 
+2. Sessions store user information on the server. 
+3. A session ID is stored in cookies to identify the user. 
+To maintain and track user information across multiple requests by storing session data on the 
+server and using cookies to identify the user. 
+npm install express-session 
+npm install cookie-parser 
+ADITYA University 
+45 
+WEB Application Development using MERN Stack 
+const express = require('express'); 
+const session = require('express-session'); 
+const cookieParser = require('cookie-parser'); 
+const app = express(); 
+const PORT = 3000; 
+app.use(cookieParser()); 
+// session middleware 
+app.use(session({ 
+secret: "mysecretkey", 
+resave: false, 
+saveUninitialized: true 
+})); 
+// home route 
+app.get('/', (req, res) => { 
+if (req.session.views) { 
+req.session.views++; 
+} else { 
+res.send(`Visited ${req.session.views} times`); 
+req.session.views = 1; 
+res.send("Welcome! First visit"); 
+} 
+}); 
+// destroy session 
+app.get('/logout', (req, res) => { 
+req.session.destroy(); 
+res.send("Session ended"); 
+ADITYA University 
+46 
+WEB Application Development using MERN Stack 
+}); 
+app.listen(PORT, () => { 
+console.log(`Server running on port ${PORT}`); 
+}); 
