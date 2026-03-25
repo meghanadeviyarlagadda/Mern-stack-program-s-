@@ -1,0 +1,31 @@
+ReactJS – Render HTML, JSX, Props and States 
+npm create vite@latest react-app 
+Select Framework: 
+React 
+Select Variant: 
+JavaScript 
+npm run dev 
+Introduction to ReactJS 
+React is a JavaScript library used to build user interfaces (UI), especially for single-page 
+applications. It allows developers to create reusable components and manage dynamic data 
+efficiently. 
+Key Features of React: 
+ Component-based architecture 
+ Virtual DOM for fast updates 
+ One-way data binding 
+ Reusable UI components 
+a. Write a program to render HTML to a web page. 
+Render HTML in React 
+Theory 
+Rendering HTML means displaying content on a web page using React. 
+In 
+traditional 
+HTML, we directly write HTML inside a file. 
+In React, we use JavaScript to render HTML using: 
+ ReactDOM.createRoot() 
+ .render() method 
+React renders content inside a root div (usually <div id="root"></div> in index.html). 
+Important Points: 
+ React uses a root element to display content. 
+ The render() method displays elements on the web page. 
+ React converts JSX/HTML into JavaScript objects internally. 
